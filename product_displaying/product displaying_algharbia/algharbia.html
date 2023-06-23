@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <mate charset="UTF-8" >
+    <mate http-equiv="X-UA-Compatible" content="IE=edge">
+    <mate name="viewport" content="width=device-width, initial-scale=1.0">
+<title>shope</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+  *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+  }
+  body{
+	font-size: 1.7rem;
+	font-family: 'Merriweather Sans', sans-serif;
+	background: #3c8b66;
+	color: #ececec;
+	padding: 4rem;
+}
+
+.start{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: url(algharbia.png)no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+
+header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo{
+  position: relative;
+  color: #000;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+header .navigation a{
+  color: #6c2900;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: background;
+  font-size: 20px;
+  
+}
+header .navigation a:not(:last-child){
+  margin-right: 30px;
+}
+header .navigation a:hover{
+background: #fff;
+}
+
+.content{
+  max-width: 650px;
+  margin: 60px 100px;
+}
+.content .info h1{
+  color:  #216f4b;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.content .info p{
+font-size: 16px;
+font-weight: 500;
+margin-bottom: 40px;
+color:  #995015;
+letter-spacing: 1px;
+
+}
+.content .info-btn{
+  color: #fff;
+  background:  #1d4e7e;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: background;
+}
+.content .info-btn:hover{
+  background: #0c4f60;
+}
+
+h2{
+	text-align: center;
+	margin-bottom: 5rem;
+	font-size: 60px
+}
+
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product{
+	overflow: hidden;
+	background: #ffffff;
+	color: #21201e;
+	text-align: center;
+	width: 270px;
+	height: 410px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 2rem;
+}
+
+.product .product-title, .product .product-price{
+	font-size: 18px;
+    color: #7e3232;
+}
+
+.product:hover img{
+	scale:  1.1;
+}
+
+.product:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.product img {
+	height: 200px;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+
+.product a:link, .product a:visited{
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color:  #1d4e7e;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.product a:hover{
+	transform: scale(1.1);
+}
+.product p {
+      margin-top: 3px;
+      font-size: 12px;
+      color: #cdad93;
+   letter-spacing: 1px;
+
+    }
+
+  </style>
+</head>
+<body>
+  <section class="start">
+    <header>
+      <h1><a href="#" class="logo">KSAlibas</a></h1>
+      <div class="navigation">
+        <a href="alshamalia.html"> Northern</a>
+        <a href="alwastaa.html">Central</a>
+        <a href="alsharqia.html">Eastern</a>
+        <a href="aljanub.html">Southern</a>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="info">
+        <h1>western<br>area</h1>
+     <p>The western region is famous for the cities of Jeddah and Makkah <br>
+        Al-Mukarramah,and it is characterized by great cultural
+         <br> diversity due to its influence onthe Hijaz.  <br>
+         Women's clothing in this region is characterized by bright and<br>
+        cheerful colors such as red, blue and green, <br>
+         and the traditional costume for men is  <br>
+         characterized by the white dress and the red ghutra.
+     </p>
+        <a href="scend_page.html" class="info-btn">Home</a>
+       
+      </div>
+    </div>
+  </section>
+
+  <section class="products">
+    <h2>Our Products</h2>
+    <div class="all-products">
+        <div class="product">
+    <img src="algharbia-man.jpeg" alt="Product 1">
+            <div class="product-info">
+                <h4 class="product-title">for men
+                </h4>
+                <div class="description">
+                  <p>Consists of 4 pieces: eaqal, shamagh, alsidiri, thawb</p>
+                </div>
+                <p class="product-price">$100</p>
+                <a class="product-btn" href="thankYou.html">Buy Now</a>
+
+            </div>
+        </div>
+        <div class="product">
+    <img src="algharbia-child.jpeg" alt="Product 2">
+            <div class="product-info">
+                <h4 class="product-title">for boy
+                </h4>
+                <div class="description">
+                  <p>Consists of 4 pieces:eaqal, shamagh, alsidiri, thawb </p>
+                </div>
+                <p class="product-price">$100</p>
+                <a class="product-btn" href="thankYou.html">Buy Now</a>
+
+
+            </div>
+        </div>
+        <div class="product">
+             <img src="algharbia-woman.jpeg" alt="Product 3">
+            <div class="product-info">
+                <h4 class="product-title">for woman
+                </h4>
+                <div class="description">
+                  <p>Consists of 2 pieces: shilah almisadah</p>
+                </div>
+                <p class="product-price">$100</p>
+                <a class="product-btn" href="thankYou.html">Buy Now</a>
+
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+                </body>
+                </html>
